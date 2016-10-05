@@ -1,61 +1,32 @@
 # magnetic-poetry-react
 
-__COMPONENT DESCRIPTION GOES HERE__
+A simple component for building up a string from a list of word options. 
+This isn't ~really~ magnetic-poetry, but naming stuff is hard.
 
 
 ## Demo & Examples
 
 Live demo: [coleww.github.io/react-magnetic-poetry](http://coleww.github.io/react-magnetic-poetry/)
 
-To build the examples locally, run:
+## usage
+
+this component should be passed an array of words to be used as options for the poem, 
+as well as an onChange function that will be called with the current poem whenever the user selects a word.
+
 
 ```
-npm install
-npm start
+  var MagneticPoetry = require('react-magnetic-poetry');
+
+  // inside your `render` function
+  <MagneticPoetry words={['wow', 'cool', 'such', 'poem', 'yes', 'nice']} onChange={console.log}/>
 ```
 
-Then open [`localhost:8000`](http://localhost:8000) in a browser.
+# Styling
 
+This component does not come with css included, though some basic styling is included in the [example]()
+The structure of the component looks like:
 
-## Installation
-
-The easiest way to use react-magnetic-poetry is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
-
-You can also use the standalone build by including `dist/react-magnetic-poetry.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
-
-```
-npm install react-magnetic-poetry --save
-```
-
-
-## Usage
-
-__EXPLAIN USAGE HERE__
-
-```
-var MagneticPoetryReact = require('react-magnetic-poetry');
-
-<MagneticPoetryReact>Example</MagneticPoetryReact>
-```
-
-### Properties
-
-* __DOCUMENT PROPERTIES HERE__
-
-### Notes
-
-__ADDITIONAL USAGE NOTES__
-
-
-## Development (`src`, `lib` and the build process)
-
-**NOTE:** The source code for the component is in `src`. A transpiled CommonJS version (generated with Babel) is available in `lib` for use with node.js, browserify and webpack. A UMD bundle is also built to `dist`, which can be included without the need for any build system.
-
-To build, watch and serve the examples (which will also watch the component source), run `npm start`. If you just want to watch changes to `src` and rebuild `lib`, run `npm run watch` (this is useful if you are working with `npm link`).
-
-## License
-
-__PUT LICENSE HERE__
-
-Copyright (c) 2016 Cole Willsea.
-
+- .magnetic-poetry-container
+  - .magnetic-poetry-options
+    - .magnetic-poetry-words
+  - .magnetic-poetry-output
