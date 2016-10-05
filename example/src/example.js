@@ -6,7 +6,7 @@ var App = React.createClass({
 	render () {
 		return (
 			<div>
-				<MagneticPoetryReact />
+				<MagneticPoetryReact words={['wow', 'cool', 'such', 'poem', 'yes', 'nice']} onChange={console.log}/>
 			</div>
 		);
 	}
