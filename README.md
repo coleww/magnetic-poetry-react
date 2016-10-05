@@ -23,7 +23,9 @@ as well as an onChange function that will be called with the current poem whenev
 
 # Styling
 
-This component does not come with css included, though some basic styling is included in the [example]()
+This component does not come with css included, though some basic styling is included in the [example](https://github.com/coleww/magnetic-poetry-react/blob/master/example/src/example.less#L6-L27)
+
+
 The structure of the component looks like:
 
 - .magnetic-poetry-container
