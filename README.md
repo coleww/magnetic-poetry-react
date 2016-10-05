@@ -6,7 +6,7 @@ This isn't ~really~ magnetic-poetry, but naming stuff is hard.
 
 ## Demo & Examples
 
-Live demo: [coleww.github.io/react-magnetic-poetry](http://coleww.github.io/react-magnetic-poetry/)
+Live demo: [coleww.github.io/magnetic-poetry-react](http://coleww.github.io/magnetic-poetry-react/)
 
 ## usage
 
